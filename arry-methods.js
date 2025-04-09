@@ -34,7 +34,7 @@ var arr=["pakistan", "india", "itly", "iran" , "iraq"]
 arr.unshift("pakistan")
 console.log(arr);
 
-//delete-- shows empty on that place......... or  cosele.log  to that objct--undefined
+//delete-- shows empty on that place......... or  cosele.log[]  to that objct--undefined
 //TIP-- us pop or push instead of delete ---will not show empty 
 var arr=["pakistan", "india", "itly", "iran" , "iraq"]
  delete arr[2]
