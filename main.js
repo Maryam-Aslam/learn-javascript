@@ -1,8 +1,8 @@
-// let person = {
-//     name: "Ali",
-//     age: 25
-//   };
-//  console.log(age);
+let person = {
+    name: "Ali",
+    age: 25
+  };
+ console.log(age);
 
 // alert("heelo everyone");
 // alert("learn progeramming languages");

@@ -193,31 +193,75 @@
 //     alert("write only three digits")
 // }
 
-let day= Number(prompt("enter any number to get the day info"));
-switch(day){
-case 1:
-    document.write("its monday");
-    break;
+// let day = Number(prompt("enter any number to get the day info"));
+// switch (day) {
+//     case 1:
+//         document.write("its monday");
+//         break;
+//     case 2:
+//         document.write("its tuesday");
+//         break;
+//     case 3:
+//         document.write("its wednesday")
+//         break;
+//     case 4:
+//         document.write("its thursday");
+//         break;
+//     case 5:
+//         document.write("friday");
+//         break;
+//     case 6:
+//         document.write("its saturday");
+//         break;
+//     case 7:
+//         document.write("sundayyyy fundayyyy");
+//         break;
+//     default:
+//         document.write("its not a week dayy");
+// }
+// let date = new Date().getDay();
+// document.write(date);
+
+
+
+let months = Number (prompt("write any number to know the month name"));
+switch (months) {
+    case 1:
+        document.write("january");
+        break;
     case 2:
-        document.write("its tuesday");
+        document.write("febrary");
         break;
-        case 3:
-    document.write("its wednesday");
-    break;
+    case 3:
+        document.write("march");
+        break;
     case 4:
-        document.write("its thursday");
+        document.write("april");
         break;
-        case 5:
-    document.write("friday");
-    break;
+    case 5:
+        document.write("may");
+        break;
     case 6:
-        document.write("its saturday");
+        document.write("june");
         break;
-        case 7:
-        document.write("sundayyyy fundayyyy");
+    case 7:
+        document.write("july");
         break;
-        default:
-            document.write("its not a week dayy");
+    case 8:
+        document.write("august");
+        break;
+    case 9:
+        document.write("september");
+        break;
+    case 10:
+        document.write("october");
+        break;
+    case 11:
+        document.write("november");
+        break;
+    case 12:
+        document.write("december");
+        break;
+        default: 
+        document.write("its not a month number")
 }
-let date= new Date().getDay();
-document.write(date);

@@ -35,7 +35,7 @@ arr.unshift("pakistan")
 console.log(arr);
 
 //delete-- shows empty on that place......... or  cosele.log[]  to that objct--undefined
-//TIP-- us pop or push instead of delete ---will not show empty 
+//TIP-- us pop or shift instead of delete ---will not show empty 
 var arr=["pakistan", "india", "itly", "iran" , "iraq"]
  delete arr[2]
 console.log(arr[2]);
@@ -68,7 +68,7 @@ var newarr = arr.toSpliced(1, 3, "maryam");
 console.log(newarr);
 
 
-//slice--no of element remove from first..no index just value how much element u want to remove
+//slice--no of element remove from first..no index just value how much element u want to removey 
 var arr=["pakistan", "india", "itly", "iran" , "iraq" , "japan"]
 var newarr = arr.slice(4);
 console.log(newarr);
@@ -84,7 +84,7 @@ console.log(newarr);
 //     document.write()
 
 // }else{
-//     alert("your condition is running")
+//     alert("your condition is not running")
 
 
 // }
@@ -137,6 +137,13 @@ else if(num%7==0){
 // let m= prompt("write your grade")
 // if(isNaN(m) ){
 // }else if()
+
+//exponentiation ** means power like 2**3=8
+
+//== check value
+//=== value and datatype
+//!= not equal
+// ? ternary operator
 
 
 
