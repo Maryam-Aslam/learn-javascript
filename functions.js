@@ -108,17 +108,17 @@
 // const ret1 = p1 => console.log(p1/3);
 // ret1(100);
 
-// let arr=["punj","sindh", "kpk","blochistan"];
-// let uname= Number(prompt("write any number from 1 to 4"));
-// function province(v1,v2){
-//     document.write(v1[v2])
-//     }
-// province(arr,uname);
-// province(v1,v2);
+let arr=["punj","sindh", "kpk","blochistan"];
+let uname= Number(prompt("write any number from 1 to 4"));
+function province(v1,v2){
+    document.write(v1[v2])
+    }
+province(arr,uname);
+province(v1,v2);
 
-let num=Number(prompt("write any number"));
-let i=0;
-while (i=10;) {
-    document.write(num*i );
-    i++;
-}
+// let num=Number(prompt("write any number"));
+// let i=0;
+// while (i=10) {
+//     document.write(num*i );
+//     i++;
+// }

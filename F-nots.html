@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//ARROW FUNCTION
+// const multiply= (a,b )=> a*b;
+// document.write(multiply(2,3));
+
+// let add=(m,n) => m+n;
+// document.write(add(10,20));
+
+
+// let dev=(p,q,r) => p+q+r;
+// document.write(dev("html","css","js"));
+
+//for in loop--use to get keys in an object
+//for only keys  console.log(details(x))
+//for only values  console.log(details[x])
+
+var info={
+    rollnumber1:"amna",
+    rollnumber2:"noor",
+    rollnumber3:"fatima",
+    rollnumber4:"zara",
+
+}
+for(let z in info){
+    document.write(z +"<br>")//only get keys
+}
+
+
+
+
+let details={
+    name:"maya",
+    class:5,
+    age:10,
+}
+for(let x in details)
+{
+console.log(details[x]);
+}//only get values
+
+
+//for of--use for arrays
+
+var arr=["string",1234, "true", "name"]
+    for(var res of arr){
+document.write(res + "<br>");
+    }
+
+
+    var arr=["string",1234, "true", "name"];
+    for(var res of arr){
+document.write(res+ "<br>");
+    }
+    </script>
+</body>
+</html>

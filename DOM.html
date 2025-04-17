@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <!-- <h1 id="heading"></h1>
+    <h1>hello</h1>
+    <h3 class="myclass">hjfjyf</h3> -->
+    <!-- to select multiple element--many cursore get by Alt key -->
+
+    <h1 class="title">its a first h1 hading</h1>
+    <h1 class="title">its a first h1 hading</h1>
+    <h1 class="title">getting atributes</h1>
+    <h1 class="title">its a first h1 hading</h1>
+    <h1 class="get value">its a first h1 hading</h1>
+    <h1 class="title">its a first h1 hading</h1>
+    <h1 class="title">its a first h1 hading</h1>
+    <img class="myimg" alt="">
+
+    <!-- <button onclick="changeText()">Click me</button> -->
+
+
+
+    <script>
+
+        //INNER HTML WE CAN ADD TAG LIKE P, H1 ETC....
+        //BUT IN INNER TEXT TAG SHOWS AS A TEXT
+
+
+
+        // function changeText(){
+        //     let heading = document.getElementsByClassName("title")[0];
+        //     heading.innerText = "you clicked!";
+        //     heading.style.background = "blue";
+        // }
+        // let head=document.getElementsByClassName("heading")[0]
+        // head.Style.BackgroundColor="Pink"
+
+
+
+        // document.getElementById("heading").innerHTML="hello heaindg"
+        // document.getElementsByTagName("h1")[1].style.backgroundColor="blue"
+        // document.getElementsByClassName("myclass")[0].innerHTML="this is class get by classname in javascript"
+        // let head = document.getElementsByClassName("myclass")[0]
+        // head.style.background = "pink"
+
+
+        //querySelector("var selector")--only select first elemnt ..
+        //queryselectorall("")--we can change that specific element by indxing[]
+        //crud--create read update delete
+
+        // document.querySelector(".title").innerHTML = "pink";
+        // document.querySelectorAll(".title")[3].innerHTML = "<button>click me</button>";
+        let change = document.querySelectorAll(".title")[3];
+        change.style.background = "blue";
+        // change.innerHTML = "<button>click me</button>";
+        // change.classList.toggle("class-add");
+      document.write(change.classList.toggle("title"));
+        
+
+        //attributes set--key n value--  document.setAttribute("")
+        var tryy = document.querySelectorAll(".myimg")[0];
+        tryy.setAttribute("src", "img.jpg");
+        //to remove any existing attributee remove complete attribute means its key and value
+        tryy.removeAttribute("src", "img.jpg");
+
+
+        //get attributes---to get the value of that attribute
+        console.log(change.hasAttribute("myyclass"))
+
+        //has attribute--true or false by checking that class
+
+
+        //add remove
+        // toggle--if that is in the class availbele then remove and if doent exist then add...
+
+
+    </script>
+</body>
+
+</html>
