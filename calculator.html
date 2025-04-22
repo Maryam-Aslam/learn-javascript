@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+</head>
+<style>
+    .calculator {
+  width: 200px;
+  margin: 50px auto;
+  text-align: center;
+}
+#display {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+button {
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  font-size: 18px;
+}
+
+</style>
+<body>
+
+  <div class="main">
+    <div class="sp">
+    <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-384c0-35.3-28.7-64-64-64L64 0zM96 64l192 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32L96 160c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32zm32 160a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM96 352a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM64 416c0-17.7 14.3-32 32-32l96 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-96 0c-17.7 0-32-14.3-32-32zM192 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm64-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM288 448a32 32 0 1 1 0-64 32 32 0 1 1 0 64z"/></svg><p>Calculator</p></div>
+    <input type="text" class="display" placeholder="0">
+    <div class="buttons">
+        <button class="nb">AC</button><button class="nb">Enter</button>
+        <button>7</button><button>8</button><button>9</button><button>/</button> <br>
+        <button>4</button><button>5</button><button>6</button><button>*</button><br>
+        <button>1</button><button>2</button><button>3</button><button>-</button> <br>
+        <button class="nb zero">0</button><button>%</button><button>+</button> <br>
+      </div>
+</div>
+      
+
+<script>
+ const user=document.getElementsByClassName("display")[0];
+ const buttons=document.querySelectorAll("button");
+ buttons 
+ buttons.forEach(btn => {
+  btn.addEventListener("click", ()=>{
+    const value=btn.textContent;
+  })
+  if(valu==="Enter"){
+    display.value=eval(display.value);
+  }else if(value==="AC"){
+    display.value=" ";
+
+  }else{
+    display.value += value;
+  }
+
+  
+ });
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment of js</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .maindiv {
+        width: 100%;
+        display: flex;
+    }
+
+    .sidebar {
+        padding: 5px 5px;
+        width: 30%;
+        background-color: #780000;
+    }
+
+    .inputbtn {
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+        margin: 5px 0px;
+
+    }
+
+    .page {
+        width: 70%;
+        padding: 5px;
+        background-color: #fdf0d5;
+    }
+
+    .mainbox {
+        width: 100%;
+        height: 100px;
+        background-color: #780000;
+        color: #fdf0d5;
+    }
+
+    .srch {
+        width: 60%;
+    }
+
+    .btn {
+        background-color: #fdf0d5;
+        color: black;
+        width: 40%;
+        border: 1px solid black;
+        border-radius: 3px;
+
+    }
+
+    .threemain {
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .div1 {
+        width: 30%;
+        background-color: #780000;
+        color: #fdf0d5;
+    }
+</style>
+
+<body>
+    <div class="maindiv">
+        <div class="sidebar">
+            <div class="inputbtn">
+                <input type="text" class="srch" placeholder="justify content">
+                <button onclick="changeJustifyContent()" class="btn"> set it</button>
+            </div>
+         
+
+        </div>
+
+
+        <div class="page">
+            <h3 class="heading">im headingg</h3>
+            <div class="mainbox">Im the main Box</div>
+            <div class="threemain">
+                <div class="div1">Box1</div>
+                <div class="div1">Box2</div>
+                <div class="div1">Box3</div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+      
+       
+        //jusrify content
+        function changeJustifyContent() {
+            var user = document.getElementsByClassName("srch")[0].value;
+            var newdir = document.getElementsByClassName("threemain")[0];
+            newdir.style.justifyContent = user;
+        }
+        function clearAllStyles{
+        document.getElementsByClassName("srch")[0].removeAttribute("style");
+        let input=document.getElementsByClassName("srch");
+        for(i=0 ; i<input.length ; i++){
+            input[i].value="";
+        }
+        }
+
+    </script>
+
+function clearAllStyles() {
+    document.getElementsByClassName("heading")[0].removeAttribute("style");
+    document.getElementsByClassName("mainbox")[0].removeAttribute("style");
+    document.getElementsByClassName("threemain")[0].removeAttribute("style");
+    
+    // for clear all input fields 
+    let inputs = document.getElementsByClassName("srch");
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].value = "";
+    }
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

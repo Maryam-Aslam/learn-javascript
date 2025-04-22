@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Changer</title>
+  <style>
+    #colorBox {
+      width: 300px;
+      height: 150px;
+      background-color: lightgray;
+      border: 2px solid #000;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Enter a color name or hex code:</h3>
+  <input type="text" id="colorInput" placeholder="e.g. red, #00ff00, rgb(0,0,255)">
+  <button onclick="changeColor()">Change Color</button>
+
+  <div id="colorBox"></div>
+
+  <script>
+    function changeColor() {
+      const inputColor = document.getElementById("colorInput").value;
+      const colorBox = document.getElementById("colorBox");
+
+      // Try to apply the color
+      colorBox.style.backgroundColor = inputColor;
+    }
+  </script>
+
+</body>
+</html>
