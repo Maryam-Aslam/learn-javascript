@@ -60,10 +60,10 @@ $(document).ready(function(){
 
     //   });
 
-    //   $("#btn").click(function(){
-    //     alert($(".myp").attr("class")
+      $("#btn").click(function(){
+        alert($(".myp").attr("class")
 
-    //    ) })
+       ) })
 
     // $("#btn").click(function(){
     //     alert($(".myp").remove("class")
@@ -100,12 +100,12 @@ $(document).ready(function(){
 //add class 
 // removeclass
 
-    $("#btn").click(function(){
-        alert($(".myp").attr({
-            class:"myp",
-            title:"my div",
-        })
+    // $("#btn").click(function(){
+    //     alert($(".myp").attr({
+    //         class:"myp",
+    //         title:"my div",
+    //     })
 
-       )})
+    //    )})
   });
   

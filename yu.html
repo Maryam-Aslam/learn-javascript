@@ -92,30 +92,27 @@ p{
             <button>7</button><button>8</button><button>9</button><button>/</button> <br>
             <button>4</button><button>5</button><button>6</button><button>*</button><br>
             <button>1</button><button>2</button><button>3</button><button>-</button> <br>
-            <button>0</button><button>%</button><button>+</button><button>log</button> <br>
+            <button class="nb zero">0</button><button>%</button><button>+</button> <br>
           </div>
     </div>
 
+
     <script>
-        var display=document.getElementsByClassName("display")[0];
-        var buttons=document.querySelectorAll("button");
-       buttons.forEach(btn => {
-        btn.addEventListener("click" , ()=>{
+       var inputs = document.getElementsByClassName("display")[0];
+       var buttons = document.querySelectorAll("button");
+       buttons.forEach(btn=>{
+        btn.addEventListener("click", ()=>{
             const value=btn.textContent;
-        
+     
         if (value==="Enter"){
-            display.value = eval(display.value);
+        diplay.value= eval(display.value);
         }else if (value==="AC"){
-            display.value="";
-            
-        }
-        else {
+            diplay.value="";
+        }else {
             display.value +=value;
         }
-        
        });
     });
-
 
 
     </script>
